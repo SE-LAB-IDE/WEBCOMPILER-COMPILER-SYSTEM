@@ -25,30 +25,35 @@
 
 <br>
 
-### 💾DATASET
-  - 경기도 공공데이터드림을 통해 받은 2018 ~ 2019년도 공공데이터
-    + 게임시설
-    + 당구장
-    + 어린이집및유치원현황
-    + 재정자립도
-    + 청소년게임제공업체
-    + 초중고등학교현황
-    + 학원및교습소현황
-    + 휴게음식점
+### 📚Database
 
 <br>
 
 ### 📸 Picture
-- INIT
 <img src="https://github.com/DongGeon0908/PacketTracer/blob/master/pic/start%20Point.png">
 
 <br>
 
+### 📥File
+- [All-Source](https://github.com/DongGeon0908/Building-a-coding-test-site-using-WEB-IDE/tree/master/WebCompiler)
+- [Sql](https://github.com/DongGeon0908/Building-a-coding-test-site-using-WEB-IDE/blob/master/sql/kko_final.sql)
+- [ROOT.war](https://github.com/DongGeon0908/Building-a-coding-test-site-using-WEB-IDE/blob/master/result/ROOT.war)
+- [요구사항 명세서](https://github.com/DongGeon0908/Building-a-coding-test-site-using-WEB-IDE/blob/master/text/%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%20%EC%A0%95%EC%9D%98.pdf)
+- [프로젝트 설계서](https://github.com/DongGeon0908/Building-a-coding-test-site-using-WEB-IDE/blob/master/text/%EC%84%A4%EA%B3%84%EC%84%9C.pdf)
+- [프로젝트 보고서](https://github.com/DongGeon0908/Building-a-coding-test-site-using-WEB-IDE/blob/master/text/%EB%B3%B4%EA%B3%A0%EC%84%9C.pdf)
+
+<br>
+
+### 👪Contributers
+
+- [16학번 김동건](https://github.com/DongGeon0908)
+- 16학번 황인준
+- 18학번 이상호
+- [19학번 안병욱](https://github.com/uuuugi)
+
+<br>
+
 ### 🤟Result
-
-> 본 논문에서는 학군이 밀집되어 형성된 지역일수록 면적당 인구수가 증가하고, 결과적으로 오락 및 유흥업소가 형성됨을 확인했다. 또한 오락 및 유흥업소가 교육기관에 비해 상대적으로 높은 비율을 갖고 밀집되어 형성된 지자체의 경우에는 재정자립비율이 상대적으로 다른 지자체에 비해 낮음을 확인할 수 있다.
-
->면적대비 학군과 오락 및 유흥업소가 밀집되어 형성된 지역일수록 재정자립비율이 낮으며, 시간이 경과함에 따라 교육기관보다 더 높은 수의 오락 및 유흥업소가 분포됨을 확인할 수 있다.
 
 <br>
 
