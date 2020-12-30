@@ -31,7 +31,6 @@
 <br>
 
 ### 📸 Picture
-<img src="https://github.com/DongGeon0908/PacketTracer/blob/master/pic/start%20Point.png">
 
 <br>
 
@@ -56,11 +55,7 @@
 <br>
 
 ### 📖References
-- [판다스 기본 익히기](https://dandyrilla.github.io/2017-08-12/pandas-10min/)
-- [Colab](https://colab.research.google.com/)
-- [경기도 공공 데이터](https://data.gg.go.kr/portal/mainPage.do)
 
 <br>
 
 ### 🔗Link
-- [논문 자료](https://github.com/DongGeon0908/Data-Analysis-Report/blob/master/%EA%B2%BD%EA%B8%B0%EB%8F%84%20%EC%8B%9C%E3%86%8D%EA%B5%B0%EB%B3%84%20%ED%95%99%EA%B5%B0%EC%97%90%20%EB%94%B0%EB%A5%B8%20%EC%98%A4%EB%9D%BD%E3%86%8D%EC%9C%A0%ED%9D%A5%EC%97%85%EC%86%8C%20%ED%98%95%EC%84%B1%EA%B3%BC%20%EC%9E%AC%EC%A0%95%EC%9E%90%EB%A6%BD%EB%8F%84%EA%B0%84%EC%9D%98%20%EA%B4%80%EA%B3%84%EC%84%B1.pdf)
