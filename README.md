@@ -31,7 +31,7 @@
 
 ### 🚘Principle Of Operation
 
-- What is Compile System?
+- Compile System Using Container Maintenance Based Technology
 > 해당 프로그램의 컴파일 시스템은 JAVA환경에서 SH를 통해 Docker로 생성된 Container에 명령을 주고받을 수 있는 형태로 구현했다. 해당 시스템을 구현하기 위해서 컨테이너 전용 우분투 이미지를 생성하였다. 사용자는 웹 IDE를 통해 데이터를 서버로 전송한다. 전송된 데이터는 Docker를 통해 Container로 전송된다. 전송된 데이터는 컨테이너 안에서 컴파일이 진행되며, 진행된 결과값은 Container와 메인서버가 공유하는 폴더로 이동된다. 서버는 해당 데이터를 사용자의 웹화면에 제공한다.
 
 - C
@@ -104,8 +104,63 @@ docker exec se01 sh -c "cd compile; mv javascriptResult.txt ../data"
 docker exec se01 sh -c "cd compile; mv javascriptError.txt ../data "
 ```
 
+- 다수의 클라이언트를 도커의 컨테이너로 분배하는 방법
+> 하나의 Container를 다수의 사용자가 이용하게 되면 Container에 부하가 발생할수 있다. 해당 문제를 해결하기 위해 컨테이너를 사용자에게 순차분배하는 방법을 사용했다.
 
-> Compile System For Solving Algorithms
+```        
+cMid.sh JavaMid.sh JavascriptMid.sh python.sh등 중간 단계 쉘스크립트를 각각의 폴더에 저장
+docker.txt파일에 저장된 값에 따라 컨테이너 분배   
+docker-container 분배 초기 단계 완료
+리펙토링 필요!!
+Container의 id가 NULL값이 되는 부분 수정
+```
+
+<img src="picture/docker.png">
+
+- 사용자 LOG 기록
+> 컴파일 시스템을 이용한 사용자에 대한 정보를 저장한다.    
+```
+docker = docker.replace("<br>", "");
+FileWriter pw = new FileWriter("/usr/local/apache/log.txt", true);
+HttpSession session = req.getSession();
+String a = (String) session.getAttribute("id"); // 회원 아이디
+Date b = new Date(session.getCreationTime()); // 최초 세션 생성 시각
+Date c = new Date(session.getLastAccessedTime()); // 최근 세션 접근 시각
+pw.write(a + " / " + b + " / " + c + " / " + docker + "\n");
+pw.close();
+```
+
+- 클라이언트의 IP주소 받아오기
+```
+public static String getClientIp(HttpServletRequest req) {
+
+	String[] header_IPs = { "HTTP_CLIENT_IP", "HTTP_X_FORWARDED_FOR", "HTTP_X_FORWARDED",
+				"HTTP_X_CLUSTER_CLIENT_IP", "HTTP_FORWARDED_FOR", "HTTP_FORWARDED", "X-Forwarded-For",
+				"Proxy-Client-IP", "WL-Proxy-Client-IP" };
+
+	for (String header : header_IPs) {
+		String ip = req.getHeader(header);
+
+		if (ip != null && !"unknown".equalsIgnoreCase(ip) && ip.length() != 0) {
+			return ip;
+			}
+		}
+
+	 return req.getRemoteAddr();
+
+}   
+```
+
+- 저장된 LOG
+<img src="picture/이용기록.png">    
+
+        
+
+
+
+
+
+- Compile System For Solving Algorithms
 
 
 
