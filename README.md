@@ -106,16 +106,7 @@ docker exec se01 sh -c "cd compile; mv javascriptError.txt ../data "
 
 - 다수의 클라이언트를 도커의 컨테이너로 분배하는 방법
 > 하나의 Container를 다수의 사용자가 이용하게 되면 Container에 부하가 발생할수 있다. 해당 문제를 해결하기 위해 컨테이너를 사용자에게 순차분배하는 방법을 사용했다.
-
-```        
-cMid.sh JavaMid.sh JavascriptMid.sh python.sh등 중간 단계 쉘스크립트를 각각의 폴더에 저장
-docker.txt파일에 저장된 값에 따라 컨테이너 분배   
-docker-container 분배 초기 단계 완료
-리펙토링 필요!!
-Container의 id가 NULL값이 되는 부분 수정
-```
-
-<img src="picture/docker.png">
+<img src="https://github.com/SE-LAB-IDE/WEBCOMPILER-COMPILER-SYSTEM/blob/master/ROOT/picture/docker.png">
 
 - 사용자 LOG 기록
 > 컴파일 시스템을 이용한 사용자에 대한 정보를 저장한다.    
@@ -152,7 +143,7 @@ public static String getClientIp(HttpServletRequest req) {
 ```
 
 - 저장된 LOG
-<img src="picture/이용기록.png">    
+<img src="https://github.com/SE-LAB-IDE/WEBCOMPILER-COMPILER-SYSTEM/blob/master/ROOT/picture/%EC%9D%B4%EC%9A%A9%EA%B8%B0%EB%A1%9D.png">    
 
         
 
